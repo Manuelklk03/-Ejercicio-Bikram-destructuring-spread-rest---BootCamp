@@ -29,3 +29,19 @@ const { today: maximaHoy, tomorrow: maximaManana } = HIGH_TEMPERATURES;
 console.log(maximaHoy);
 console.log(maximaManana);
 
+// Ejercicio 5
+const sumEveryOther = (...numbers) => {
+  return numbers.reduce((total, number) => total + number, 0);
+};
+
+// Ejercicio 6
+const addOnlyNums = (...args) => {
+  return args
+    .filter((arg) => typeof arg === "number")
+    .reduce((total, number) => total + number, 0);
+};
+
+// Ejercicio 7
+const countTheArgs = (...args) => {
+  return args.length;
+};
