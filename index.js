@@ -45,3 +45,13 @@ const addOnlyNums = (...args) => {
 const countTheArgs = (...args) => {
   return args.length;
 };
+
+// Ejercicio 8
+const combineTwoArrays = (array1, array2) => {
+  return [...array1, ...array2];
+};
+
+// Ejercicio 9
+const onlyUniques = (...args) => {
+  return [...new Set(args)];
+};
