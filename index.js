@@ -55,3 +55,13 @@ const combineTwoArrays = (array1, array2) => {
 const onlyUniques = (...args) => {
   return [...new Set(args)];
 };
+
+// Ejercicio 10
+const combineAllArrays = (...arrays) => {
+  return arrays.reduce((result, array) => [...result, ...array], []);
+};
+
+// Ejercicio 11
+const sumAndSquare = (...numbers) => {
+  return numbers.reduce((total, number) => total + number ** 2, 0);
+};
